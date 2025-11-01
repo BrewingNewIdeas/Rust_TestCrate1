@@ -1,0 +1,10 @@
+[package]
+name = "pdb_reader"
+version = "0.1.0"
+edition = "2024"
+authors = ["Me"]
+description = "A simple hello library"
+
+repository = "https://github.com/yourusername/hello_library"
+
+[dependencies]
