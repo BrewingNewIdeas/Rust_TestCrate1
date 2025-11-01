@@ -1,10 +1,11 @@
 [package]
 name = "pdb_reader"
 version = "0.1.0"
-edition = "2024"
-authors = ["Me"]
-description = "A simple hello library"
+edition = "2021"  # Change this too - 2024 doesn't exist yet
 
-repository = "https://github.com/yourusername/hello_library"
+[lib]
+name = "pdb_reader"  # Must match the #[pymodule] name!
+crate-type = ["cdylib"]
 
 [dependencies]
+pyo3 = { version = "0.22", features = ["extension-module"] }
